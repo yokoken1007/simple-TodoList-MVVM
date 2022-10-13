@@ -1,0 +1,6 @@
+framework module Pods_simple_TodoList_MVVM {
+  umbrella header "Pods-simple-TodoList-MVVM-umbrella.h"
+
+  export *
+  module * { export * }
+}

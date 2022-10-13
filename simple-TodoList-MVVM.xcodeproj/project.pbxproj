@@ -13,6 +13,7 @@
 		3817B36828F817A700F18926 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3817B36628F817A700F18926 /* Main.storyboard */; };
 		3817B36A28F817A900F18926 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3817B36928F817A900F18926 /* Assets.xcassets */; };
 		3817B36D28F817A900F18926 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3817B36B28F817A900F18926 /* LaunchScreen.storyboard */; };
+		74BB18166D4CECC66033F7C1 /* Pods_simple_TodoList_MVVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B266EA63E47FF96539DEC96F /* Pods_simple_TodoList_MVVM.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		3817B36928F817A900F18926 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3817B36C28F817A900F18926 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3817B36E28F817A900F18926 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		572F6FB5555A8F1B4B84E75C /* Pods-simple-TodoList-MVVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-simple-TodoList-MVVM.release.xcconfig"; path = "Target Support Files/Pods-simple-TodoList-MVVM/Pods-simple-TodoList-MVVM.release.xcconfig"; sourceTree = "<group>"; };
+		B266EA63E47FF96539DEC96F /* Pods_simple_TodoList_MVVM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_simple_TodoList_MVVM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4B732B3588F147412410268 /* Pods-simple-TodoList-MVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-simple-TodoList-MVVM.debug.xcconfig"; path = "Target Support Files/Pods-simple-TodoList-MVVM/Pods-simple-TodoList-MVVM.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74BB18166D4CECC66033F7C1 /* Pods_simple_TodoList_MVVM.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B8D541CB05121C5B730A8C3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D4B732B3588F147412410268 /* Pods-simple-TodoList-MVVM.debug.xcconfig */,
+				572F6FB5555A8F1B4B84E75C /* Pods-simple-TodoList-MVVM.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		3817B35428F817A700F18926 = {
 			isa = PBXGroup;
 			children = (
 				3817B35F28F817A700F18926 /* simple-TodoList-MVVM */,
 				3817B35E28F817A700F18926 /* Products */,
+				0B8D541CB05121C5B730A8C3 /* Pods */,
+				D796EB0BA987922F0F742FBB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +84,14 @@
 			path = "simple-TodoList-MVVM";
 			sourceTree = "<group>";
 		};
+		D796EB0BA987922F0F742FBB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B266EA63E47FF96539DEC96F /* Pods_simple_TodoList_MVVM.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3817B37128F817A900F18926 /* Build configuration list for PBXNativeTarget "simple-TodoList-MVVM" */;
 			buildPhases = (
+				220832C30DCAA69FBDEC4D8C /* [CP] Check Pods Manifest.lock */,
 				3817B35928F817A700F18926 /* Sources */,
 				3817B35A28F817A700F18926 /* Frameworks */,
 				3817B35B28F817A700F18926 /* Resources */,
+				7AFFBCCD8A74BE75A0227A87 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		220832C30DCAA69FBDEC4D8C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-simple-TodoList-MVVM-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7AFFBCCD8A74BE75A0227A87 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-simple-TodoList-MVVM/Pods-simple-TodoList-MVVM-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-simple-TodoList-MVVM/Pods-simple-TodoList-MVVM-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-simple-TodoList-MVVM/Pods-simple-TodoList-MVVM-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3817B35928F817A700F18926 /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		3817B37228F817A900F18926 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4B732B3588F147412410268 /* Pods-simple-TodoList-MVVM.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -309,6 +379,7 @@
 		};
 		3817B37328F817A900F18926 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 572F6FB5555A8F1B4B84E75C /* Pods-simple-TodoList-MVVM.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
